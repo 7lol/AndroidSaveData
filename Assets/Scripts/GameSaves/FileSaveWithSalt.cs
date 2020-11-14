@@ -13,17 +13,17 @@ public class FileSaveWithSalt : FileSave {
 
     [Serializable]
     public class SaltedIntSave : SimpleIntSave {
-        private int GetSalt() => 13377331;
+        private int GetSalt { get => 13377331; }
         public SaltedIntSave(int newValue) {
             value = newValue;
         }
         public override string GetJson() {
-            SaltedIntSave tempSave = new SaltedIntSave(value + GetSalt());
+            SaltedIntSave tempSave = new SaltedIntSave(value + GetSalt);
             return JsonUtility.ToJson(tempSave);
         }
         public override void FromJson(string json) {
             JsonUtility.FromJsonOverwrite(json, this);
-            value -= GetSalt();
+            value -= GetSalt;
         }
     }
 }

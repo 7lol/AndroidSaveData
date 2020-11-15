@@ -92,11 +92,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7401221802376339435, guid: b2f83bb2e6e44dc448afee060d1128dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Save
+      value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 7401221802376339435, guid: b2f83bb2e6e44dc448afee060d1128dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BinFileSave, Assembly-CSharp
+      value: GameSave, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7401221802376339435, guid: b2f83bb2e6e44dc448afee060d1128dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

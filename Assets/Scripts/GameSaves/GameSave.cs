@@ -13,7 +13,7 @@ public class GameSave : MonoBehaviour {
     /// <summary>
     /// Handle loading and filling data on start.
     /// </summary>
-    private void Start() {
+    public void Start() {
         Load();
         RefreshLabel();
         onTempValueChanged.Invoke(value);
@@ -51,7 +51,4 @@ public class GameSave : MonoBehaviour {
     /// Load value from persistent memory
     /// </summary>
     public virtual void Load() { }
-    /// <summary>
-    /// Try to set value, and save it.
-    /// </summary>
 }
